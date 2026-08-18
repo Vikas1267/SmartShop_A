@@ -83,7 +83,7 @@ public final class DatabaseInitializer {
                 seedProductsWhenEmpty(connection);
             }
         } catch (SQLException exception) {
-            throw new DataAccessException("Database setup failed. Please check MySQL service and credentials.", exception);
+            throw new DataAccessException("Database setup failed. Please check MySQL service and credentials.");
         }
     }
 
@@ -151,7 +151,7 @@ public final class DatabaseInitializer {
         }
     }
 
-    private void seedProductsWhenEmpty(Connection connection) throws SQLException {
+    private void seedProductsWhenEmpty(Connection connection) throws SQLException  {
         String countSql = "SELECT COUNT(*) FROM products";
         try (Statement statement = connection.createStatement();
              ResultSet resultSet = statement.executeQuery(countSql)) {
