@@ -1,17 +1,17 @@
-package com.vikas.ui;
+package ui;
 
-import com.vikas.dao.ProductDao;
-import com.vikas.dao.PurchaseDao;
-import com.vikas.dao.UserDao;
-import com.vikas.exception.DataAccessException;
-import com.vikas.model.Admin;
-import com.vikas.model.Product;
-import com.vikas.model.Purchase;
-import com.vikas.model.User;
-import com.vikas.service.AdminService;
-import com.vikas.service.AuthService;
-import com.vikas.service.ProductService;
-import com.vikas.service.PurchaseService;
+import com.dao.Productdao;
+import com.dao.Purchasedao;
+import com.dao.Userdao;
+import Exception.DataAccessException;
+import Model.Admin;
+import Model.Product;
+import Model.Purchase;
+import Model.User;
+import service.AdminService;
+import service.AuthService;
+import service.ProductService;
+import service.PurchaseService;
 
 import java.math.BigDecimal;
 import java.util.List;

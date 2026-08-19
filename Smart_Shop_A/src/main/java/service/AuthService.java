@@ -1,17 +1,17 @@
-package com.vikas.service;
+package service;
 
-import com.vikas.dao.UserDao;
-import com.vikas.model.User;
-import com.vikas.model.UserCredentials;
-import com.vikas.util.PasswordUtil;
-import com.vikas.util.ValidationUtil;
+import com.dao.Userdao;
+import Model.User;
+import Model.UserCredentials;
+//import util.PasswordUtil;
+//import util.ValidationUtil;
 
 import java.util.Optional;
 
 public class AuthService {
-    private final UserDao userDao;
+    private final Userdao userDao;
 
-    public AuthService(UserDao userDao) {
+    public AuthService(Userdao userDao) {
         this.userDao = userDao;
     }
 

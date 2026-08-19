@@ -1,20 +1,20 @@
-package com.vikas.service;
+package service;
 
-import com.vikas.config.AppConfig;
-import com.vikas.dao.UserDao;
-import com.vikas.db.DatabaseConnection;
-import com.vikas.model.Admin;
-import com.vikas.model.User;
-import com.vikas.util.ValidationUtil;
+import config.AppConfig;
+import com.dao.Userdao;
+import db.DatabaseConnection;
+import Model.Admin;
+import Model.User;
+//import util.ValidationUtil;
 
 import java.util.List;
 import java.util.Optional;
 
 public class AdminService {
     private final AppConfig config;
-    private final UserDao userDao;
+    private final Userdao userDao;
 
-    public AdminService(UserDao userDao) {
+    public AdminService(Userdao userDao) {
         this.config = DatabaseConnection.config();
         this.userDao = userDao;
     }
