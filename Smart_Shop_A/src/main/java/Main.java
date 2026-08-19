@@ -14,8 +14,6 @@ public class Main {
             if (exception.getCause() != null && exception.getCause().getMessage() != null) {
                 System.out.println("Details: " + exception.getCause().getMessage());
             }
-        } finally {
-            AbandonedConnectionCleanupThread.checkedShutdown();
         }
     }
 }
