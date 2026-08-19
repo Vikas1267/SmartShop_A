@@ -1,6 +1,6 @@
 package Exception;
 
-public class PurchaseHistoryNotFoundException extends Exception {
+public class PurchaseHistoryNotFoundException extends RuntimeException {
 	
 	public PurchaseHistoryNotFoundException(String message) {
 		super(message);

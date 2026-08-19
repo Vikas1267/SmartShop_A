@@ -1,16 +1,16 @@
-package com.vikas.service;
+package service;
 
-import com.vikas.dao.PurchaseDao;
-import com.vikas.model.Purchase;
-import com.vikas.model.User;
-import com.vikas.util.ValidationUtil;
+import DAO.Purchasedao;
+import Model.Purchase;
+import Model.User;
+import Utiil.ValidationUtil;
 
 import java.util.List;
 
 public class PurchaseService {
-    private final PurchaseDao purchaseDao;
+    private final Purchasedao purchaseDao;
 
-    public PurchaseService(PurchaseDao purchaseDao) {
+    public PurchaseService(Purchasedao purchaseDao) {
         this.purchaseDao = purchaseDao;
     }
 

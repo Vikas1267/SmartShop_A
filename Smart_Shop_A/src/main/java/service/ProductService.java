@@ -1,10 +1,8 @@
-package com.vikas.service;
-
-import com.vikas.dao.ProductDao;
-import com.vikas.model.Product;
-import com.vikas.util.ValidationUtil;
+package service;
 
 import DAO.Productdao;
+import Model.Product;
+import Utiil.ValidationUtil;
 
 import java.math.BigDecimal;
 import java.util.List;
