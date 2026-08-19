@@ -1,6 +1,7 @@
 import db.DatabaseInitializer;
 import Exception.DataAccessException;
 import ui.ConsoleApp;
+import com.mysql.cj.jdbc.AbandonedConnectionCleanupThread;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,6 +14,8 @@ public class Main {
             if (exception.getCause() != null && exception.getCause().getMessage() != null) {
                 System.out.println("Details: " + exception.getCause().getMessage());
             }
+        } finally {
+            AbandonedConnectionCleanupThread.checkedShutdown();
         }
     }
 }

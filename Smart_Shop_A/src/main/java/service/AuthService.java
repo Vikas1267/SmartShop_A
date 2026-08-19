@@ -68,9 +68,9 @@ public class AuthService {
         UserCredentials userCredentials = credentials.get();
         boolean passwordMatches = PasswordUtil.verifyPassword(
                 password,
-                userCredentials.passwordHash(),
-                userCredentials.passwordSalt()
+                userCredentials.getPasswordHash(),
+                userCredentials.getPasswordSalt()
         );
-        return passwordMatches ? Optional.of(userCredentials.user()) : Optional.empty();
+        return passwordMatches ? Optional.of(userCredentials.getUser()) : Optional.empty();
     }
 }
