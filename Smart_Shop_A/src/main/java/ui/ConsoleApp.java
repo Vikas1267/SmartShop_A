@@ -1,8 +1,5 @@
 package ui;
 
-import com.dao.Productdao;
-import com.dao.Purchasedao;
-import com.dao.Userdao;
 import Exception.DataAccessException;
 import Model.Admin;
 import Model.Product;
@@ -18,6 +15,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
+import DAO.Productdao;
+import DAO.Purchasedao;
+import DAO.Userdao;
+
 public class ConsoleApp {
     private final ConsoleInput input;
     private final AuthService authService;
@@ -26,9 +27,9 @@ public class ConsoleApp {
     private final PurchaseService purchaseService;
 
     public ConsoleApp() {
-        UserDao userDao = new UserDao();
-        ProductDao productDao = new ProductDao();
-        PurchaseDao purchaseDao = new PurchaseDao();
+        Userdao userDao = new Userdao();
+        Productdao productDao = new Productdao();
+        Purchasedao purchaseDao = new Purchasedao();
 
         this.input = new ConsoleInput(new Scanner(System.in));
         this.authService = new AuthService(userDao);

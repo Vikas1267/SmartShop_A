@@ -4,14 +4,16 @@ import com.vikas.dao.ProductDao;
 import com.vikas.model.Product;
 import com.vikas.util.ValidationUtil;
 
+import DAO.Productdao;
+
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 
 public class ProductService {
-    private final ProductDao productDao;
+    private final Productdao productDao;
 
-    public ProductService(ProductDao productDao) {
+    public ProductService(Productdao productDao) {
         this.productDao = productDao;
     }
 

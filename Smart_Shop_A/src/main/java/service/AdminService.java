@@ -1,7 +1,6 @@
 package service;
 
 import config.AppConfig;
-import com.dao.Userdao;
 import db.DatabaseConnection;
 import Model.Admin;
 import Model.User;
@@ -9,6 +8,8 @@ import Model.User;
 
 import java.util.List;
 import java.util.Optional;
+
+import DAO.Userdao;
 
 public class AdminService {
     private final AppConfig config;

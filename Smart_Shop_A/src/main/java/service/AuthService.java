@@ -1,12 +1,13 @@
 package service;
 
-import com.dao.Userdao;
 import Model.User;
 import Model.UserCredentials;
 //import util.PasswordUtil;
 //import util.ValidationUtil;
 
 import java.util.Optional;
+
+import DAO.Userdao;
 
 public class AuthService {
     private final Userdao userDao;
