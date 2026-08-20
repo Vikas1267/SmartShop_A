@@ -37,7 +37,7 @@ public class PasswordUtil {
             throw new IllegalStateException("Unable to hash password.", exception);
         } finally {
             spec.clearPassword();
-            Arrays.fill(passwordChars, '\0');
+            Arrays.fill(passwordChars , '\0');
         }
     }
 
